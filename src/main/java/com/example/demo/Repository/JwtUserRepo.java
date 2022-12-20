@@ -10,7 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 @Repository
-@Transactional
 public interface JwtUserRepo extends JpaRepository<User,Long> {
 
     @Query(value = "select * from tuserinfo where USER_EMAIL = :USER_EMAIL" ,nativeQuery = true)

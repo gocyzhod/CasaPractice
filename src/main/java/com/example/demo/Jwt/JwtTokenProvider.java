@@ -15,6 +15,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.nio.charset.StandardCharsets;
 import java.security.Key;
@@ -25,6 +26,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Component
 @Log4j2
+@Transactional
 public class JwtTokenProvider {
 
     private String secretKey = "myprojectsecretqweqweasdasdgawgwegarsgwqe";

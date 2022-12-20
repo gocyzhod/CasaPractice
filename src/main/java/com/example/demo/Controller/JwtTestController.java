@@ -18,6 +18,7 @@ import java.util.Map;
 @RestController
 @RequiredArgsConstructor
 @Slf4j
+
 public class JwtTestController {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass().getSimpleName());
